@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lassonde Engineering Resources</title>
     
-    <link rel="icon" type="image/x-icon" href="https://lassonde.yorku.ca/sites/default/files/favicon_0.ico">
-    
+    <title>LassondeHub | Engineering Student Resources</title>
+    <meta name="description" content="The central community repository for Lassonde School of Engineering students. Access lecture notes, past exams, code snippets, and study guides for York University engineering courses.">
+    <meta name="keywords" content="LassondeHub, Lassonde School of Engineering, York University, Engineering Notes, EECS Resources, MATH 1013, PHYS 1801, Study Guides">
+    <meta name="author" content="LassondeHub Community">
+
+    <meta property="og:title" content="LassondeHub | Student Resources">
+    <meta property="og:description" content="Free access to formulas, schematics, and lecture notes for Engineering students.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lassondehub.vercel.app/"> 
+    <meta name="google-site-verification" content="BmxFnRu23zvtpXF-6fZk8O7Rn4XfuOBjHmvbYhSKAWk" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +24,7 @@
         tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], }, colors: { primary: { 50: '#f5f3ff', 100: '#ede9fe', 500: '#8b5cf6', 600: '#7c3aed', 700: '#6d28d9', 900: '#4c1d95', } } } } }
     </script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans antialiased overflow-hidden">
     <div class="flex h-screen w-full">
@@ -97,29 +106,48 @@
                         <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Core Engineering (Year 1 & 2)</h2>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                             
-                            <a href="calculus.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
+                            <a href="courses/calculus/calculus.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
                                 <div class="w-10 h-10 rounded-lg bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i data-lucide="sigma" class="w-5 h-5"></i></div>
                                 <h3 class="font-bold text-gray-900 dark:text-white">Calculus</h3>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">Calc I, II</p>
                             </a>
 
-                            <a href="physics.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
+                            <a href="courses/physics/physics.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
                                 <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i data-lucide="magnet" class="w-5 h-5"></i></div>
                                 <h3 class="font-bold text-gray-900 dark:text-white">Physics</h3>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">Mechanics, E&M</p>
                             </a>
 
-                            <a href="chemistry.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
+                            <a href="courses/chemistry/chemistry.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
                                 <div class="w-10 h-10 rounded-lg bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i data-lucide="test-tube-2" class="w-5 h-5"></i></div>
                                 <h3 class="font-bold text-gray-900 dark:text-white">Chemistry</h3>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">Gen Chem, Materials</p>
                             </a>
 
-                            <a href="programming.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
+                            <a href="courses/eecs/programming.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
                                 <div class="w-10 h-10 rounded-lg bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i data-lucide="terminal" class="w-5 h-5"></i></div>
                                 <h3 class="font-bold text-gray-900 dark:text-white">Programming</h3>
                                 <p class="text-xs text-gray-500 dark:text-gray-400">MATLAB, Java</p>
                             </a>
+
+                            <a href="courses/linear-algebra/linear-algebra.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
+                                <div class="w-10 h-10 rounded-lg bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i data-lucide="grid-3x3" class="w-5 h-5"></i></div>
+                                <h3 class="font-bold text-gray-900 dark:text-white">Linear Algebra</h3>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Matrices, Vectors</p>
+                            </a>
+
+                            <a href="courses/eng/renaissance.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
+                                <div class="w-10 h-10 rounded-lg bg-yellow-100 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i data-lucide="lightbulb" class="w-5 h-5"></i></div>
+                                <h3 class="font-bold text-gray-900 dark:text-white">Renaissance Eng</h3>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Ethics, Design</p>
+                            </a>
+
+                            <a href="courses/discrete-math/discrete-math.html" class="p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl hover:border-primary-500 dark:hover:border-primary-500 transition-all group text-left block">
+                                <div class="w-10 h-10 rounded-lg bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform"><i data-lucide="binary" class="w-5 h-5"></i></div>
+                                <h3 class="font-bold text-gray-900 dark:text-white">Discrete Math</h3>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Logic, Sets, Graphs</p>
+                            </a>
+
                         </div>
                     </div>
 
@@ -130,7 +158,7 @@
                         
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             
-                            <a href="course-details.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
+                            <a href="courses/calculus/math-1014.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
                                 <div class="flex justify-between items-start mb-4">
                                     <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-md">MATH-1014</span>
                                     <span class="text-gray-400"><i data-lucide="folder-cog" class="w-5 h-5"></i></span>
@@ -142,7 +170,7 @@
                                 </div>
                             </a>
 
-                            <a href="course-details.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
+                            <a href="courses/physics/phys-1801.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
                                 <div class="flex justify-between items-start mb-4">
                                     <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-md">PHYS-1801</span>
                                     <span class="text-gray-400"><i data-lucide="folder-cog" class="w-5 h-5"></i></span>
@@ -154,7 +182,7 @@
                                 </div>
                             </a>
 
-                            <a href="course-details.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
+                            <a href="courses/chemistry/chem-1100.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
                                 <div class="flex justify-between items-start mb-4">
                                     <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-md">CHEM-1100</span>
                                     <span class="text-gray-400"><i data-lucide="folder-cog" class="w-5 h-5"></i></span>
@@ -166,7 +194,7 @@
                                 </div>
                             </a>
 
-                            <a href="course-details.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
+                            <a href="courses/eecs/programming.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
                                 <div class="flex justify-between items-start mb-4">
                                     <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-md">ENG-1102</span>
                                     <span class="text-gray-400"><i data-lucide="folder-cog" class="w-5 h-5"></i></span>
@@ -178,12 +206,12 @@
                                 </div>
                             </a>
 
-                            <a href="course-details.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
+                            <a href="courses/eecs/eecs-1011.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-800 transition-all">
                                 <div class="flex justify-between items-start mb-4">
                                     <span class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-semibold rounded-md">EECS-1021</span>
                                     <span class="text-gray-400"><i data-lucide="folder-cog" class="w-5 h-5"></i></span>
                                 </div>
-                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 transition-colors">Object Oriented Prog</h3>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 transition-colors">Object Oriented Programming</h3>
                                 <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 line-clamp-2">Java programming with Sensors and Actuators. Code samples and lab projects.</p>
                                 <div class="flex items-center gap-4 text-xs font-medium text-gray-500 dark:text-gray-400 pt-4 border-t border-gray-100 dark:border-gray-800">
                                     <span class="flex items-center gap-1"><i data-lucide="file" class="w-3 h-3"></i> 0 Files</span>
@@ -210,6 +238,48 @@
             </main>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('mobile-overlay');
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        function toggleMenu() {
+            const isClosed = sidebar.classList.contains('-translate-x-full');
+            if (isClosed) {
+                sidebar.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+            } else {
+                sidebar.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+            }
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+
+        // Theme Toggle Logic
+        themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+
+        // Check local storage for theme
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+    </script>
 </body>
 </html>

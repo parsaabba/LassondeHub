@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physics - Lassonde Resources</title>
-    <link rel="icon" type="image/x-icon" href="https://lassonde.yorku.ca/sites/default/files/favicon_0.ico">
+    <title>Physics</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/img/favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], }, colors: { primary: { 50: '#f5f3ff', 100: '#ede9fe', 500: '#8b5cf6', 600: '#7c3aed', 700: '#6d28d9', 900: '#4c1d95', } } } } }
     </script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans antialiased overflow-hidden">
     <div class="flex h-screen w-full">
@@ -26,7 +26,7 @@
             </div>
             
             <nav class="flex-1 px-4 py-6 space-y-1 overflow-y-auto custom-scroll">
-                <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                <a href="../../index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
                     <i data-lucide="arrow-left" class="w-5 h-5"></i><span>Back to Hub</span>
                 </a>
                 <div class="my-4 border-t border-gray-100 dark:border-gray-800"></div>
@@ -35,6 +35,19 @@
                     <i data-lucide="magnet" class="w-5 h-5"></i><span>Physics Dept</span>
                 </a>
             </nav>
+
+            <div class="p-4 border-t border-gray-100 dark:border-gray-800">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-3">
+                    <div class="flex items-start gap-2 mb-1">
+                        <i data-lucide="info" class="w-4 h-4 text-gray-400 mt-0.5"></i>
+                        <h4 class="text-xs font-bold text-gray-500 dark:text-gray-400">Notice</h4>
+                    </div>
+                    <p class="text-[10px] text-gray-400 dark:text-gray-500 leading-relaxed">
+                        This website is not affiliated with York University or the Lassonde School of Engineering. It is a community initiative.
+                    </p>
+                </div>
+            </div>
+
         </aside>
 
         <div class="flex-1 flex flex-col h-screen overflow-hidden bg-gray-50 dark:bg-gray-950">
@@ -62,7 +75,7 @@
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <a href="course-details.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-blue-500 transition-all">
+                        <a href="phys-1800.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-blue-500 transition-all">
                             <div class="flex justify-between items-start mb-4">
                                 <span class="px-2 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-xs font-semibold rounded-md">PHYS-1011</span>
                                 <span class="text-gray-400 group-hover:text-blue-500 transition-colors"><i data-lucide="arrow-right" class="w-5 h-5"></i></span>
@@ -74,7 +87,7 @@
                             </div>
                         </a>
 
-                        <a href="course-details.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-blue-500 transition-all">
+                        <a href="phys-1801.html" class="group bg-white dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg hover:border-blue-500 transition-all">
                             <div class="flex justify-between items-start mb-4">
                                 <span class="px-2 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 text-xs font-semibold rounded-md">PHYS-1012</span>
                                 <span class="text-gray-400 group-hover:text-blue-500 transition-colors"><i data-lucide="arrow-right" class="w-5 h-5"></i></span>
@@ -90,6 +103,6 @@
             </main>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="../../assets/js/script.js"></script>
 </body>
 </html>
