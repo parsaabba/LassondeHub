@@ -19,7 +19,15 @@
         // Initialize Supabase
         const supabaseUrl = 'https://aumwwmnobbcvqkuawrmc.supabase.co';
         const supabaseKey = 'sb_publishable_S0i-374GlQCM-ADGJ32UTg_Elonb1XB'; // Use the Anon Key if this fails
-        const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+        let supabase;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.supabase) {
+                supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+            } else {
+                console.error("Supabase library not loaded!");
+            }
+        });
     </script>
     <style>
         /* Shared Styles from style.css counterpart */
@@ -157,6 +165,7 @@
                     successMsg.textContent = "Account created! Please check your email to confirm.";
                     successMsg.classList.remove('hidden');
                 } else {
+                    if (!supabase) throw new Error("Supabase client not initialized. Refresh page.");
                     const { data, error } = await supabase.auth.signInWithPassword({
                         email: email,
                         password: password,
